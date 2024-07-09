@@ -115,7 +115,7 @@ header .header-img img {
   margin-top: 25px;
 }
 
-#reset-game-btn {
-  display: none;
+#resetGame-btn {
   margin: 20px auto;
+  text-align: center;
 }

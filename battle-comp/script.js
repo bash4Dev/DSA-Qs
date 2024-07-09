@@ -45,25 +45,32 @@ function getRoundResults(userOption) {
 
 
 // Step four & five
-const playerScoreSpanElement = document.getElementById(playerScore);
-const computerScoreSpanElement = document.getElementById(computerScore);
+const playerScoreSpanElement = document.getElementById("playerScore");
+const computerScoreSpanElement = document.getElementById("computerScore");
 const roundResultsMsg = document.getElementById("roundResults-msg");
 const winnerMsgElement = document.getElementById("winner-msg");
 const resetGameBtn = document.getElementById("resetGame-btn");
 const optionsContainer = document.querySelector(".optionsContainer");
 
+resetGameBtn.style.display = "none";
 
 function showResults(userOption) {
+
+  if (playerScore === 3 || computerScore === 3) {
+    if (playerScore === 3) {
+      winnerMsgElement.innerText = "Player has won the game"
+    } else {
+      winnerMsgElement.innerText = "Computer has won the game"
+    }
+    // winnerMsgElement.innerText = `${(playerScore === 3) ? "Player" : "Computer"} has won the game!`;
+    resetGameBtn.style.display = "block";
+    optionsContainer.style.display = "none";
+  }
+
   playerScoreSpanElement.innerText = playerScore;
   computerScoreSpanElement.innerText = computerScore;
   roundResultsMsg.innerText = getRoundResults(userOption);
 
-  if (playerScore === 3 || computerScore === 3) {
-    winnerMsgElement.innerText = `${(playerScore === 3) ? "Player" : "Computer"} has won the game`;
-
-    resetGameBtn.style.display = "block";
-    optionsContainer.style.display = "none";
-  }
 };
 
 // Step six
@@ -74,7 +81,7 @@ function resetGame() {
   playerScoreSpanElement.innerText = playerScore;
   computerScoreSpanElement.innerText = computerScore;
   resetGameBtn.style.display = "none";
-  optionsContainer.style.display = "hide";
+  optionsContainer.style.display = "block";
   roundResultsMsg.innerText = "";
   winnerMsgElement.innerText = "";
 };
