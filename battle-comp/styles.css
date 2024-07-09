@@ -95,7 +95,7 @@ header .header-img img {
   }
 }
 
-.score-container {
+.scoreContainer {
   display: flex;
   justify-content: space-around;
   margin: 13px 0;
@@ -106,7 +106,7 @@ header .header-img img {
   font-weight: 500;
 }
 
-.results-container {
+.resultsContainer {
   font-size: 1.3rem;
   margin: 15px 0;
 }

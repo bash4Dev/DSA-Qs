@@ -36,8 +36,6 @@
 
 - If the computer wins the round, update the *computerScore* by 1 and return the message "Computer wins! [*computer's choice*] beats [*player's choice*]".
 
-- [*computer's choice*] should be replaced with *computerResult* while [*player's choice*] should be replaced with the *userOption*.
-
 
 ## Step 4
 
