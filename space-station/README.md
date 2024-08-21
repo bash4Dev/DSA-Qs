@@ -8,4 +8,4 @@
 
 ## Credits
 
-- **CodeSignal**: I have completed these JavaScript challenges on CodeSignal. You can view my profile and achievements [here](https://learn.codesignal.com/my-learning).
+- **CodeSignal**: I have completed these JavaScript challenges on CodeSignal. You can view my profile and achievements [here](https://learn.codesignal.com/profile/cm015uhqj004tg4x2e5w0a09n).
