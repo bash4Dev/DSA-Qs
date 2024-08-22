@@ -31,3 +31,15 @@ planets.forEach((planet) => {
   let moonMessage = planet.hasMoons ? `${planet.name} has moons` : `${planet.name} has no moons`;
   document.getElementById('cosmicInfo').textContent += moonMessage + " ";
 });
+
+// Task 3
+// Define an object with properties to determine if it is an asteroid with the following keys: isRocky and isOrbiting.
+const asteroidObj = {
+  isRocky: true,
+  isOrbiting: false
+};
+const {isRocky, isOrbiting} = asteroidObj;
+
+const detectionStatus = (isRocky === true && isOrbiting === false) ? 'Asteroid detected!' : 'No asteroid detected.';
+
+document.getElementById("detectionStatus").innerText = detectionStatus;
