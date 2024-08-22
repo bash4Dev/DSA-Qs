@@ -6,6 +6,8 @@
 
 2. Add the appropriate code to determine whether the planet has moons and display the message.
 
+3. Define an object with properties to determine if it is an asteroid with the following keys: isRocky and isOrbiting
+
 ## Credits
 
 - **CodeSignal**: I have completed these JavaScript challenges on CodeSignal. You can view my profile and achievements [here](https://learn.codesignal.com/profile/cm015uhqj004tg4x2e5w0a09n).
