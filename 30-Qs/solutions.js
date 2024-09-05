@@ -6,7 +6,11 @@ const maxNumb = (array) => {
 }
 console.log(maxNumb([20, 13, 27, 6, 18]));
 
-// Q2 - Write a function that checks if a given string is a palindrome (ignoring spaces, punctuation, and capitalization).
+// Q2 - Write a function to reverse a string.
+const reverseStr = (str) => str.split('').reverse().join('');
+reverseStr('bashir');
+
+// Q3 - Write a function that checks if a given string is a palindrome (ignoring spaces, punctuation, and capitalization).
 const checkPalindrome = (input) => {
     const palRegex = input.toLowerCase().replace(/([\s])/gi, '');
     const reversed = input.split('').reverse().join('');
