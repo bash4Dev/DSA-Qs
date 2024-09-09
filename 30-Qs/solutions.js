@@ -37,13 +37,24 @@ function compare(a, b) {
 let array = [2, 20, 5, 8, 15, 3, 2, 8];
 let sortedArr = array.sort(compare);
 
-// for (arr of sortedArr) {
-// }
+const removeDuplicate = (array) => {
+    let uniqueArr = [];
+    let duplArr = [];
+
+    for (let i = 0; i < array.length; i++) {
+        if (!duplArr[array[i]]) {
+            uniqueArr.push(array[i]);
+            duplArr[array[i]] = true;
+        }
+    }
+    return `Array elements: ${uniqueArr} New length: ${uniqueArr.length}`;
+}
+removeDuplicate(sortedArr);
 
 /** Q5
  * Given two sorted arrays, merge them into one sorted array.
  */
-let array2 = [3,5,8,14,1,23,41,3];
+let array2 = [3, 5, 7, 14, 1, 8, 31, 7];
 
 let sortedArr2 = array2.sort(compare);
 let mergedArr = sortedArr + sortedArr2;
